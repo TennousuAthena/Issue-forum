@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ page.title }} ~ Issue Forum ~</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="renderer" content="webkit">
+  <link rel="stylesheet" href="assets/css/mdui.min.css">
+  <link rel="stylesheet" href="assets/css/nprogress.min.css">
+</head>
+
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-indigo mdui-theme-accent-pink">
+  <header class="mdui-appbar mdui-appbar-fixed">
+    {% include nav.html %}
+  </header>
+  <div class="mdui-drawer" id="main-drawer">
+    <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+
+      <div class="mdui-collapse-item mdui-collapse-item-open">
+        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-orange">home</i>
+          <div class="mdui-list-item-content">Home</div>
+          <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+        </div>
+        <div class="mdui-collapse-item-body mdui-list">
+          <a href="/" class="mdui-list-item mdui-ripple mdui-list-item-active">Discuss</a>
+          <a href="/" class="mdui-list-item mdui-ripple ">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pjax-content">
+    {{ content }}
+  </div>
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/mdui.min.js"></script>
+  <script type="text/javascript" src="assets/js/jq-pjax.min.js"></script>
+  <script type="text/javascript" src="assets/js/nprogress.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
