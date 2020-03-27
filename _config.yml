@@ -1,1 +1,6 @@
 encoding : utf-8
+baseurl : /
+resource : /assets/
+
+#Github
+client_id : 769d0466fafe6a02a477
