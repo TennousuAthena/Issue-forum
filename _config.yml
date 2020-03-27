@@ -4,3 +4,6 @@ resource : /assets/
 
 #Github
 client_id : 769d0466fafe6a02a477
+
+#Back-end
+API_url : https://service-kuxg7cgy-1252139706.hk.apigw.tencentcs.com/release/back-end

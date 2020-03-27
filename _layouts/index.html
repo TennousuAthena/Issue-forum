@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>{{ page.title }} ~ Issue Forum ~</title>
@@ -13,14 +13,17 @@
 
 <body class="mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-indigo mdui-theme-accent-pink">
 
+  <script>const GH_CID = "{{site.client_id}}"; const API = "{{site.API_url}}"; function getParameter(name) { var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); var r = location.search.substr(1).match(reg); if (r != null) return (r[2]); return null; }</script>
+
   <div id="pjax-content">
     <header class="mdui-appbar mdui-appbar-fixed">
       {% include nav.html %}
     </header>
 
     {% include drawer.html %}
-
-    {{ content }}
+    <div class="mdui-container">
+      {{ content }}
+    </div>
   </div>
   <script type="text/javascript" src="{{ "js/jquery.min.js"  | prepend:site.resource}}"></script>
   <script type="text/javascript" src="{{ "js/mdui.min.js"  | prepend:site.resource}}"></script>

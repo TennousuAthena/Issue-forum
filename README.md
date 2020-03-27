@@ -5,5 +5,5 @@
 - Jquery
 - Github pages
 - Jekyll
-- Cloudflare Workers
+- Cloudflare Workers & Tencent Serverless Cloud Function
 - NProgress

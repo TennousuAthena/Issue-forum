@@ -5,11 +5,6 @@ drawer: false
 ---
 <h1>Redirecting to Github...</h1>
 <script>
-    function getParameter(name) {
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-        var r = location.search.substr(1).match(reg);
-        if (r != null) return (r[2]); return null;
-    }
     if (getParameter("code") == null) {
         window.location.href = "https://github.com/login/oauth/authorize?client_id={{site.client_id}}";
     } else {
