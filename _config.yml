@@ -6,4 +6,4 @@ resource : /assets/
 client_id : 769d0466fafe6a02a477
 
 #Back-end
-API_url : https://service-kuxg7cgy-1252139706.hk.apigw.tencentcs.com/release/back-end
+API_url : https://service-4fbfnz9q-1252139706.sg.apigw.tencentcs.com/release/back_end
